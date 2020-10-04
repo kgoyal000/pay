@@ -74,7 +74,7 @@ function onBuyClicked() {
 
   let request = null;
   try {
-    request = new PaymentRequest(supportedInstruments, details, options);
+    request = new PaymentRequest(supportedInstruments, details);
   } catch (e) {
     console.log('Payment Request Error: ' + e.message);
     return;
